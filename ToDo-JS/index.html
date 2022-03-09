@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo-JS</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="write-todo">
+        <input
+          type="text"
+          name="todo"
+          id="todo"
+          placeholder="write about a task"
+        />
+        <input type="submit" name="add" id="add" value="+" />
+      </div>
+      <div class="content" id="content">
+        <ul class="Tasks">
+          <div class="order"></div>
+          <div class="task-cont">
+            <li>Todo Task 1</li>
+            <div class="editing">
+              <li id="check"></li>
+              <li id="delete">
+                <img
+                  src="https://img.icons8.com/external-inkubators-blue-inkubators/25/000000/external-delete-ecommerce-user-interface-inkubators-blue-inkubators.png"
+                />
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="allofthem">
+        <ul>
+          <li id="alldelete">Delete All</li>
+          <li id="allcheck">Check All</li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
